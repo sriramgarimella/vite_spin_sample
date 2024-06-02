@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "spin-build": "vite build && npx mkdirp Target && spin js2wasm -o target/vite_spin_sample.wasm dist/assets/index-Bxdu2Du0.js",
+    "spin-build": "vite build && npx mkdirp Target && spin js2wasm -o target/vite_spin_sample.wasm dist/spin/application-entry.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
