@@ -1,0 +1,16 @@
+spin_manifest_version = 2
+
+[application]
+authors = ["Sriram Garimella <sriram.garimella@gmail.com>"]
+name = "vite_spin_sample"
+version = "1.0.0"
+
+[[trigger.http]]
+route = "/..."
+component = "frontend"
+
+[[component.frontend]]
+source = "target/vite_spin_sample.wasm"
+files = [{source = "dist", destination = "/"}]
+[component.frontend.build]
+command = "npm run build"
